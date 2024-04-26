@@ -1,0 +1,6 @@
+[submodule "Ez3DGL"]
+	path = Ez3DGL
+	url = https://github.com/MrAMS/Ez3DGL.git
+[submodule "3rdparty/assimp"]
+	path = 3rdparty/assimp
+	url = https://github.com/assimp/assimp.git
