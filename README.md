@@ -29,3 +29,12 @@ add lights to scene
 render OBJ model
 
 ![screenshot](./screenshot/model_demo.png)
+
+### A jet game
+
+*not yet open source*
+
+This is a game that a fighter jet launches missiles to destroy missile launchers on the ground
+![screenshot](./screenshot/jetgame1.png)
+
+![screenshot](./screenshot/jetgame2.png)

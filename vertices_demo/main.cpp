@@ -55,7 +55,6 @@ void user_loop(long int frame_delta_ms){
     const auto vertices_dynamic = gen_vertices_dynamic(loop_cnt);
     vaos[3]->update_vbo_buffer(vertices_dynamic.size(), &vertices_dynamic[0]);
     
-    // const auto color = glm::vec3(loop_cnt%1000/1000.f);
     for(auto& model: model_matrixs){
         model.rotate(frame_delta_ms/rotate_param, glm::vec3(0, 1, 0));
         model.rotate(frame_delta_ms/rotate_param, glm::vec3(1, 0, 0));
@@ -63,7 +62,6 @@ void user_loop(long int frame_delta_ms){
 
     shader_simple->use();
     shader_simple->update_camera(&camera);
-    // shader_simple->set_uniform("color", color);
 
     for(int i=0;i<4;++i){
         shader_simple->set_uniform("color", colors[i]*(loop_cnt%1000/1000.f));
