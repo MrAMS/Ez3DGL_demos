@@ -1,4 +1,4 @@
-# Demo Projects of Ez3DGL
+# Demo Projects of [Ez3DGL](https://github.com/MrAMS/Ez3DGL)
 
 ## Usage
 
