@@ -48,7 +48,7 @@ void user_loop(long int frame_delta_ms){
         model.rotate(frame_delta_ms/rotate_param, glm::vec3(1, 0, 0));
     }
     // 
-    shader.set_lights({light_dir}, {}, {light_spot});
+    shader.set_lights({light_dir}, {}, {});
 
     missile_car->draw(&shader, &camera, &model_matrixs[0]);
     jet->draw(&shader, &camera, &model_matrixs[1]);
